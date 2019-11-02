@@ -1,0 +1,23 @@
+﻿<Window x:Name="Main_window" x:Class="Duck_shooter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Duck_shooter"
+        mc:Ignorable="d"
+        Title="Retro wave duck shooter" Height="450" Width="800">
+    <Grid>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/wallhaven-712699.jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="score_box" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" TextWrapping="Wrap" Text="Score: 0" VerticalAlignment="Top" Width="110" Foreground="#FF00FF2E" FontSize="16"/>
+        <Rectangle HorizontalAlignment="Left" Height="298" Margin="0,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Fill="#7F03681A"/>
+        <TextBlock x:Name="weapons_text" HorizontalAlignment="Left" Height="24" Margin="10,124,0,0" TextWrapping="Wrap" Text="Weapons:" VerticalAlignment="Top" Width="89" Foreground="#FF00FF2E" FontSize="16"/>
+        <RadioButton x:Name="gun_check" Content="Gun" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Foreground="#FF03FF03"/>
+        <RadioButton x:Name="shootgun_check" Content="Shootgun" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF04F304"/>
+
+    </Grid>
+</Window>
