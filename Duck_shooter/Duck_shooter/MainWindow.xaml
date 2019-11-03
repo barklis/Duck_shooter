@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Duck_shooter"
         mc:Ignorable="d"
         Title="Retro wave duck shooter" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="game_background">
         <Grid.Effect>
             <DropShadowEffect/>
         </Grid.Effect>
@@ -16,8 +16,15 @@
         <TextBlock x:Name="score_box" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" TextWrapping="Wrap" Text="Score: 0" VerticalAlignment="Top" Width="110" Foreground="#FF00FF2E" FontSize="16"/>
         <Rectangle HorizontalAlignment="Left" Height="298" Margin="0,121,0,0" Stroke="Black" VerticalAlignment="Top" Width="179" Fill="#7F03681A"/>
         <TextBlock x:Name="weapons_text" HorizontalAlignment="Left" Height="24" Margin="10,124,0,0" TextWrapping="Wrap" Text="Weapons:" VerticalAlignment="Top" Width="89" Foreground="#FF00FF2E" FontSize="16"/>
-        <RadioButton x:Name="gun_check" Content="Gun" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Foreground="#FF03FF03"/>
+        <RadioButton x:Name="gun_check" Content="Gun" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Foreground="#FF03FF03" Checked="gun_check_Checked"/>
         <RadioButton x:Name="shootgun_check" Content="Shootgun" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF04F304"/>
+        <TextBlock x:Name="gamestatus_text" HorizontalAlignment="Left" Height="32" Margin="284,173,0,0" TextWrapping="Wrap" Text="Game Over" VerticalAlignment="Top" Width="220" Foreground="#FF2EFF00" FontSize="24" FontFamily="Vineta BT"/>
+        <StackPanel x:Name="enemy" HorizontalAlignment="Left" Height="40" Margin="565,153,0,0" VerticalAlignment="Top" Width="39">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Resources/wallhaven-668846.jpg"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <TextBlock x:Name="time_info" HorizontalAlignment="Left" Height="23" Margin="683,10,0,0" TextWrapping="Wrap" Text="Time: 0" VerticalAlignment="Top" Width="99" Foreground="#FF2EFF00" FontSize="16"/>
 
     </Grid>
 </Window>
