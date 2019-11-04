@@ -63,6 +63,26 @@ namespace Duck_shooter.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap scope {
+            get {
+                object obj = ResourceManager.GetObject("scope", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap spaceship_inny {
+            get {
+                object obj = ResourceManager.GetObject("spaceship_inny", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallhaven_668846 {
             get {
                 object obj = ResourceManager.GetObject("wallhaven_668846", resourceCulture);
